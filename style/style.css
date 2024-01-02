@@ -53,7 +53,6 @@ body
       left: 58%;
       top: 261px;
       z-index: 1;
-
 }
 
 .circle2
@@ -68,7 +67,6 @@ body
       left: 56.5%;
       top: 195px;
       z-index: 1;
-
 }
 
 /* Middle */
@@ -77,8 +75,17 @@ body
       background-color: white;
       text-align: center;
       width: 35%;
-      border-radius: 3%;
-      
+      border-radius: 3%; 
+}
+
+.bodyChart h2
+{
+      color: #432F23;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      text-align: left;
+      margin-left: 20px;
+      position: relative;
+      top: 20px;
 }
 
 .line
@@ -119,6 +126,11 @@ body
       top: 35px;
       text-align: right;
       margin-right: 10%;
+}
+
+#sum
+{
+      color:#432F23;
 }
 
 .reference
