@@ -42,6 +42,18 @@ window.onload = function()
       {
           return item.amount;
       });
+
+      var colors = amounts.map(function(amount, index) 
+      {
+            if (amount > 50) 
+            {
+                return '#6DB9C6';
+            }
+            else 
+            {
+                return '#EB745C';
+            }
+      });
   
       var myChart = new Chart(ctx,
       {
@@ -53,8 +65,8 @@ window.onload = function()
                   [{
                         label: 'Spending',
                         data: amounts,
-                        backgroundColor: '#EB745C',
-                        borderColor: '#EB745C',
+                        backgroundColor: colors,
+                        borderColor: colors,
                         borderWidth: 1,
                   }]
             },
@@ -69,4 +81,15 @@ window.onload = function()
               }
             }
       });
-  }
+
+      //get the sum
+      var sum = 0;
+
+      for (var i = 0; i < amounts.length; i++) 
+      {
+          sum += amounts[i];
+      }
+      
+      document.getElementById('sum').innerHTML ="€ " + sum;
+
+}
