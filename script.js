@@ -1,3 +1,6 @@
+
+
+
 window.onload = function() 
 {
       var ctx = document.getElementById("myChart").getContext("2d");
@@ -43,7 +46,7 @@ window.onload = function()
           return item.amount;
       });
 
-      var colors = amounts.map(function(amount, index) 
+      var colors = amounts.map(function(amount,) 
       {
             if (amount > 50) 
             {
@@ -58,7 +61,7 @@ window.onload = function()
       var myChart = new Chart(ctx,
       {
           type: 'bar',
-          data: 
+          data:
             {
                   labels: labels,
                   datasets: 
@@ -72,14 +75,42 @@ window.onload = function()
             },
           options: 
             {
-              scales: 
-              {
-                  y: 
+                  scales: 
                   {
-                      beginAtZero: true
-                  }
-              }
-            }
+                        y: 
+                        {
+                              display: false,
+                              beginAtZero: true,
+                              grid:
+                              {
+                                    display: false,
+                              }
+                        },
+                        x:
+                        {
+                              grid:
+                              {
+                                    display: false,
+                              }   
+                        }
+                        
+                  },
+                  plugins: 
+                  {
+                        legend: 
+                        {
+                              display: false, 
+                        }
+                  },
+                  elements:
+                  {
+                        bar:
+                        {
+                              borderRadius: 10,
+                        }
+                  },
+            },
+
       });
 
       //get the sum

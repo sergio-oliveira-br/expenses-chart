@@ -6,24 +6,95 @@ body
 {background-color: #F3EEE5;}
 
 /*
-** Header
+** Chart
 */
+
+/* Card */
+.card
+{
+      position: relative;
+      left: 30%;
+      top: 100px;
+}
+
+/* Header */
 .header
 {
       background-color: #EB745C;
-      width: 33%;
+      width: 35%;
       height: 100px;
-      border-radius: 5%;
+      border-radius: 20px;
+      color: rgba(255, 255, 255, 0.94);
 }
 
-
-/*
-** Chart
-*/
-#myChart
+.header p
 {
-      width: 400px !important;
-      height: 400px !important;
+     margin: 0;
+     margin-bottom: 5% !important;
+     position: relative;
+     top: 25%;
+     left: 5%;
+}
+
+.header h1
+{
+      position: relative;
+      left: 5%;
+}
+
+/* Middle */
+.bodyChart
+{
+      background-color: white;
+      text-align: center;
+      width: 35%;
+      border-radius: 3%;
+      
+}
+
+.line
+{
+      width: 90%;
+      border: 1px solid #F3EEE5;
+      position: relative;
+      right: -20px;
+}
+
+/* Bottom */
+.bottom
+{
+      display: grid;
+      grid-template-columns: auto auto;
+      
+}
+
+.totalWeek p
+{
+      color: #bbbbbb;
+      position: relative;
+      left: -55px;
+}
+
+.totalWeek h1
+{
+      position: relative;
+      top: -22px;
+      left: -50px;
+      font-family: 'Times New Roman', Times, serif; 
+}
+
+.diffWeek p
+{
+      margin: 0;
+      position: relative;
+      top: 35px;
+      text-align: right;
+      margin-right: 10%;
+}
+
+.reference
+{
+      color: #bbbbbb;
 }
 
 /*
@@ -32,7 +103,9 @@ body
 .attribution 
 {
       font-size: 11px; 
-      text-align: center; 
+      
+      position: relative;
+
 }
 .attribution a 
 {

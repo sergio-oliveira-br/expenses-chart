@@ -16,28 +16,38 @@
 
     <!-- JS Link -->
     <script type="text/javascript" src="script.js"></script>  </head>
+
   <body>
-    <div
-      class="header">
+    <div class="card">
+      <div class="header">
         <p>My balance</p>
-        <h2 id="sum"></h2>
-    </div>
+          <h1>€921.48</h1>
+      </div>
 
-    <div>
-      <h2>Spending - Last 7 days</h2>
+      <div class="bodyChart"> 
+        <h2>Spending - Last 7 days</h2>
+          <div>
+            <canvas id="myChart"><p>Sergio</p></canvas>
+          </div>
 
-      <canvas id="myChart"></canvas>
-     
-      Total this month
-      $478.33
+        <p class="line"></p>
 
-      +2.4%
-      from last month
-    </div>
+        <div class="bottom">
+          <div class="totalWeek">
+            <p>Total this week</p>
+              <h1 id="sum"></h1>
+          </div>    
 
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+          <div class="diffWeek">
+            <p class="mathWeek"><b>+2.4%</b></p>
+              <p class="reference">from last month</p>
+          </div>
+        </div> 
+        <div class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+          Coded by <a href="https://github.com/sergio-oliveira-br">Sergio Oliveira</a>.
+        </div> 
+      </div>
     </div>
   </body>
 </html>
