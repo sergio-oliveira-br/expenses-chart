@@ -42,6 +42,35 @@ body
       left: 5%;
 }
 
+.circle1
+{
+      
+      background-color: #432F23;
+      position: relative;
+      border-radius: 100%;
+      width: 4%;
+      height: 50px;
+      left: 58%;
+      top: 261px;
+      z-index: 1;
+
+}
+
+.circle2
+{
+      
+     
+      border: 1px solid wheat;
+      position: relative;
+      border-radius: 100%;
+      width: 3.7%;
+      height: 50px;
+      left: 56.5%;
+      top: 195px;
+      z-index: 1;
+
+}
+
 /* Middle */
 .bodyChart
 {
