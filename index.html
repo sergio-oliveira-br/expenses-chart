@@ -10,7 +10,12 @@
 
     <!-- CSS Link -->
     <link rel="stylesheet" href="../expenses-chart/style/style.css">
-  </head>
+
+    <!-- JSON Link -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- JS Link -->
+    <script type="text/javascript" src="script.js"></script>  </head>
   <body>
     <div
       class="header">
@@ -21,14 +26,8 @@
     <div>
       <h2>Spending - Last 7 days</h2>
 
-      mon
-      tue
-      wed
-      thu
-      fri
-      sat
-      sun
-
+      <canvas id="myChart"></canvas>
+     
       Total this month
       $478.33
 
