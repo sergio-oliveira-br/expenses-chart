@@ -1,8 +1,26 @@
+/*
+** Body
+*/
+
+body
+{background-color: #F3EEE5;}
+
+/*
+** Header
+*/
+.header
+{
+      background-color: #EB745C;
+      width: 33%;
+      height: 100px;
+      border-radius: 5%;
+}
+
+
 
 /*
 ** Signature
 */
-
 .attribution 
 {
       font-size: 11px; 
